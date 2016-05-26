@@ -1,8 +1,8 @@
 
 public class Test {
 	public static void main(String[] args){
-		String p = "aabacb";
-		String text = "baabacbdsds";
+		String p = "yener";
+		String text = "mertkanyener";
 		StrMatcher s = new StrMatcher();
 		int[][] t = s.computeTranF(p);
 		//s.printTranF(t);

@@ -33,8 +33,7 @@ public class StrMatcher {
 				do{
 					k = k-1;
 				}while(!(p.substring(0,q) + e).endsWith(p.substring(0,k)));
-				int a = alph.indexOf(e);
-				M[q][a] = k;
+				M[q][alph.indexOf(e)] = k;
 				String str = Character.toString(e);
 				if(!characters.contains(str)){
 					characters = characters + " " + str;
@@ -83,7 +82,7 @@ public class StrMatcher {
 	public boolean finiteAutomatonMatcher(String text, int[][] t, String p){
 		boolean result = false;
 		int n = text.length();
-		int m = p.length();
+		int m = p.length(); // final state 
 		int q = 0;
 		char x;
 		int ch;
